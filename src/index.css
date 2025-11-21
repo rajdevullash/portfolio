@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+  /* reset background to deep navy for Sunflower Gold contrast */
+  --background: 220 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 98%;
+
+  /* Primary: Sunflower Gold */
+  --primary: 42 95% 52%;
+  --primary-foreground: 220 16% 8%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 15% 65%;
+
+  --accent: 42 95% 52%;
+  --accent-foreground: 220 16% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+  /* navy tones for contrast with Sunflower Gold */
+  --navy-dark: 220 25% 8%;
+  --navy-medium: 220 20% 12%;
+  --navy-light: 220 20% 18%;
+  --cyan-bright: 42 95% 52%;
+  --cyan-glow: 42 95% 62%;
+    
+    /* Gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(220 25% 8%) 0%, hsl(220 35% 12%) 50%, hsl(200 40% 15%) 100%);
+  --gradient-accent: linear-gradient(90deg, hsl(42 95% 52%) 0%, hsl(42 95% 62%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(220 20% 12% / 0.5) 0%, hsl(220 20% 15% / 0.5) 100%);
+    
+    /* Shadows */
+  --shadow-glow: 0 0 40px hsl(42 95% 52% / 0.28);
+  --ring: 42 95% 52%;
+    --shadow-card: 0 8px 32px hsl(220 25% 5% / 0.4);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
