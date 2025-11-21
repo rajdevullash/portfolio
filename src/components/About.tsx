@@ -30,8 +30,8 @@ const About = () => {
   
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-background to-navy-medium">
-      <div className="container mx-auto px-6">
+    <section id="about" className="py-20 bg-gradient-to-b from-background to-navy-medium overflow-x-hidden w-full">
+      <div className="container mx-auto px-4 sm:px-6 w-full max-w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <motion.div
             className="relative"
@@ -58,7 +58,7 @@ const About = () => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <motion.div
-                className="w-80 h-80 mx-auto rounded-2xl overflow-hidden border-4 border-primary/30 shadow-glow"
+                className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto rounded-2xl overflow-hidden border-4 border-primary/30 shadow-glow"
                 initial={{ scale: 0.8, rotate: -5 }}
                 whileInView={{ scale: 1, rotate: 0 }}
                 viewport={{ once: true }}

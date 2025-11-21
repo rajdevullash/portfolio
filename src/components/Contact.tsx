@@ -100,8 +100,8 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-background to-navy-medium">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-20 bg-gradient-to-b from-background to-navy-medium overflow-x-hidden w-full">
+      <div className="container mx-auto px-4 sm:px-6 w-full max-w-full">
         <div className="max-w-4xl mx-auto">
           <motion.div
             className="text-center mb-12"
@@ -145,7 +145,7 @@ const Contact = () => {
             </motion.p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}

@@ -51,8 +51,8 @@ const Projects = () => {
 
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-navy-medium to-background">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-20 bg-gradient-to-b from-navy-medium to-background overflow-x-hidden w-full">
+      <div className="container mx-auto px-4 sm:px-6 w-full max-w-full">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: -30 }}
@@ -123,7 +123,7 @@ const Projects = () => {
         <AnimatePresence mode="wait">
           <motion.div
             key={filter}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto px-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

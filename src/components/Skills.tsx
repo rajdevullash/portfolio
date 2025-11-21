@@ -15,8 +15,8 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="skills" className="py-20 overflow-x-hidden w-full">
+      <div className="container mx-auto px-4 sm:px-6 w-full max-w-full">
         <div className="max-w-4xl mx-auto">
           <motion.div
             className="text-center mb-12"

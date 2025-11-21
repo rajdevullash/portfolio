@@ -40,8 +40,8 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-6">
+    <section className="py-20 overflow-x-hidden w-full">
+      <div className="container mx-auto px-4 sm:px-6 w-full max-w-full">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: -30 }}
